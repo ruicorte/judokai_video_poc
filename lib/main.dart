@@ -43,13 +43,21 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                     onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute(
                             builder: (_) => const YoutubeScreen())),
                     child: const Text('youtube plain unlisted video')),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton(
+                    onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (_) => const YoutubeScreen())),
+                    child: const Text('youtube plain unlisted video')),
+              ),
             ],
           ),
         ),
