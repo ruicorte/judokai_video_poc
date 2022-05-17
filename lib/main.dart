@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:video_poc/video_player_screen.dart';
 import 'package:video_poc/youtube.dart';
 
 void main() {
@@ -45,18 +46,25 @@ class MyHomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
-                    onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                            builder: (_) => const YoutubeScreen())),
-                    child: const Text('youtube plain unlisted video')),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const YoutubeScreen(),
+                    ),
+                  ),
+                  child: const Text('youtube plain unlisted video'),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
-                    onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                            builder: (_) => const YoutubeScreen())),
-                    child: const Text('youtube plain unlisted video')),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const VideoPlayerScreen(),
+                    ),
+                  ),
+                  child:
+                      const Text('video player - local and youtube unlisted'),
+                ),
               ),
             ],
           ),
